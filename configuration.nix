@@ -67,6 +67,24 @@
     LC_TIME = "ms_MY.UTF-8";
   };
 
+  #Font
+   fonts.packages = with pkgs; [
+     noto-fonts
+     noto-fonts-cjk
+     noto-fonts-cjk-sans
+     noto-fonts-cjk-serif
+#     wqy-microhei
+#     wqy-zenhei
+     noto-fonts-emoji
+     liberation_ttf
+     fira-code
+     fira-code-symbols
+     mplus-outline-fonts.githubRelease
+     dina-font
+     proggyfonts
+   ];
+
+
   #fcitx5
 #  i18n.inputMethod.enabled = "fcitx5";
 #  i18n.inputMethod.fcitx5.addons = [
@@ -140,6 +158,8 @@
       kate
       clinfo
       gamemode
+      wqy_zenhei
+      wqy-microhei
     #  thunderbird
     ];
   };
